@@ -10,7 +10,7 @@ import spray.json.DefaultJsonProtocol
 /**
   * Created by saul on 2/10/16.
   */
-object DataModel extends DefaultJsonProtocol {
+trait DataModel extends DefaultJsonProtocol {
 
   implicit val itemFormat = jsonFormat2(Item)
 
