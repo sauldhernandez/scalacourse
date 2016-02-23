@@ -1,0 +1,42 @@
+swagger: '2.0'
+
+info:
+  version: "1.0.0"
+  title: Weather API
+
+consumes:
+- application/json
+produces:
+- application/json
+
+paths:
+  /weather/city/{cityName}:
+    get:
+      tags:
+      - weather
+      description: Gets the weather for a given city
+      parameters:
+      - name: cityName
+        in: path
+        required: true
+        type: string
+      responses:
+        200:
+          description: The weather information was successfully retrieved.
+          schema:
+            $ref: "#/definitions/WeatherResponse"
+        404:
+          description: The weather information could not be found.
+definitions:
+  WeatherResponse:
+    type: object
+    properties:
+      cityName:
+        description: The name of the city whose information was retrieved
+        type: string
+      temperature:
+        description: The temperature, in celsius
+        type: number
+      pressure:
+        description: The atmospheric pressure, in atm
+        type: number
