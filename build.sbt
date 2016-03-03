@@ -6,3 +6,6 @@ version := "1.0"
 
 scalaVersion := "2.11.7"
 
+zordonGenConfig := Seq(
+  zordonGenConfig.value.head.copy(generateStubs = true)
+)
