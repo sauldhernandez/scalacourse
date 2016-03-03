@@ -18,6 +18,11 @@ Está permitido consultar la documentación de las herramientas y buscar en inte
 
 Disponen de dos (2) horas para desarrollar las tareas solicitadas.
 
+### Entrega
+
+Deben hacer fork de este repositorio, y hacer push con el resultado del taller antes de la hora de finalización del mismo.
+Por favor verifiquen en Github que en efecto se subieron todos los archivos necesarios.
+
 ## Enunciado
 
 Se requiere un servicio REST que permita hacer seguimiento simple de proyectos. En este sistema, se debe poder crear proyectos,
